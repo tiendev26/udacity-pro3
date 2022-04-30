@@ -1,0 +1,60 @@
+# Stop git from tracking the set_env.sh file
+git rm --cached set_env.sh
+# Prevent git from tracking the set_env.sh file
+echo *set_env.sh >> .gitignore
+
+
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+.vscode/
+npm-debug.log*
+
+.idea/
+.ionic/
+.sourcemaps/
+.sass-cache/
+.tmp/
+.versions/
+coverage/
+www/
+node_modules/
+tmp/
+temp/
+platforms/
+plugins/
+plugins/android.json
+plugins/ios.json
+$RECYCLE.BIN/
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+./udagram-api-feed/node_modules
+./udagram-api-user/node_modules
+./udagram-frontend/node_modules
+
+node_modules
+set_env_example.sh
+set_env.sh
+
+aws-secret.yaml
+env-secret.yaml
+env-configmap.yaml
+
+#udagram-api-feed-deployment.yaml
+#udagram-api-feed-service.yaml
+#udagram-api-user-deployment.yaml
+#udagram-api-user-service.yaml
+#udagram-api-frontend-deployment.yaml
+#udagram-api-frontend-service.yaml
+#udagram-reverseproxy-deployment.yaml
+#udagram-reverseproxy-service.yaml
